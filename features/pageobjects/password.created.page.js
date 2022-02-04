@@ -2,10 +2,12 @@ const Page = require('./page');
 
 class passwordCreatedPage extends Page {
 
-    get passswordCreated() { return $('.mb90'); }
+    get emprisingLogo() { return $('.emprising-logo'); }
+    get certificationLogo() { return $('.cert-logo'); }
 
-    checkItem(text) {
-        expect(this.passswordCreated.getText()).toBe.equal(text);
+    CheckItems() {
+        expect(this.emprisingLogo.isDisplayed()).to.be.true;
+        expect(this.certificationLogo.isDisplayed()).to.be.true;
     }
 
 };

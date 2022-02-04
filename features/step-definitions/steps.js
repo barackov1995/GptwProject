@@ -21,7 +21,7 @@ When('I click on create password button', function () {
     createPasswordPage.submitButton();
 });
 
-Then('I expcet to have {string} text on the created password page', function (text) {
-    return passwordCreatedPage.checkItem(text);
-});
+Then('I expect some items are displayed on created password page', function () {
+    return passwordCreatedPage.checkItems();
+  });
 
