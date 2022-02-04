@@ -22,6 +22,6 @@ When('I click on create password button', function () {
 });
 
 Then('I expect some items are displayed on created password page', function () {
-    return passwordCreatedPage.checkItems();
+    return passwordCreatedPage.CheckItems();
   });
 

@@ -6,8 +6,8 @@ class passwordCreatedPage extends Page {
     get certificationLogo() { return $('.cert-logo'); }
 
     CheckItems() {
-        expect(this.emprisingLogo.isDisplayed()).to.be.true;
-        expect(this.certificationLogo.isDisplayed()).to.be.true;
+        expect(this.emprisingLogo.isDisplayed()).toEqual(true);
+        expect(this.certificationLogo.isDisplayed()).toEqual(true);
     }
 
 };
