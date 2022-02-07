@@ -12,6 +12,8 @@ class createPasswordPage extends Page {
     get password() { return $('#Password') }
     get reEnterPassword() { return $('#ConfirmPassword') }
     get btnSubmit() { return $('button[type="submit"]') }
+    get errorPass() { return $('#Password-error')}
+    get errorPassConfirmation() {return $('#ConfirmPassword-error')}
 
     /**
      * a method to encapsule automation code to interact with the page

@@ -23,5 +23,13 @@ When('I click on create password button', function () {
 
 Then('I expect some items are displayed on created password page', function () {
     return passwordCreatedPage.CheckItems();
-  });
+});
+
+Then('The error message should say: {string}', function (message) {
+    return expect(createPasswordPage.errorPass.getText()).toEqual(message);
+});
+
+Then('The following error message is displayed: {string}', function (text) {
+    return expect(createPasswordPage.errorPassConfirmation.getText()).toEqual(text);
+});
 
