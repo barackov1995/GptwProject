@@ -1,8 +1,8 @@
 # GptwProject
 
-- I use this project to improve automation. 
-- I use Webdriver.io framework with Cucumber. 
-- My task is to write automated tests for Create Password page 
+- I used this project to improve automation. 
+- I used Webdriver.io framework with Cucumber. 
+- My task was to write automated tests for Create Password page 
 
 - Test release script: npx wdio run wdio.conf.js
 
