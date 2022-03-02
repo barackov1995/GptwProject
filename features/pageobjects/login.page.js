@@ -11,23 +11,27 @@ class createPasswordPage extends Page {
      */
     get password() { return $('#Password') }
     get reEnterPassword() { return $('#ConfirmPassword') }
-    get btnSubmit() { return $('button[type="submit"]') }
-    get errorPass() { return $('#Password-error')}
-    get errorPassConfirmation() {return $('#ConfirmPassword-error')}
+    get btnSubmit() { return $('button=Create password') }
+    get errorPass() { return $('#Password-error') }
+    get errorPassConfirmation() { return $('#ConfirmPassword-error') }
 
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to create password using password 1 and password2
      */
-    passwordField (pass1) {
+    passwordField(pass1) {
         this.password.setValue(pass1);
     };
 
-    reEnterPasswordField (pass2) {
+    reEnterPasswordField(pass2) {
         this.reEnterPassword.setValue(pass2);
     };
 
     submitButton() {
+        browser.debug();
+        if (!this.btnSubmit.isDisplayed()) {
+            this.btnSubmit.waitForDisplayed();
+        }
         this.btnSubmit.click();
     };
 
