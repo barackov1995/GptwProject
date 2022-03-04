@@ -28,7 +28,6 @@ class createPasswordPage extends Page {
     };
 
     submitButton() {
-        browser.debug();
         if (!this.btnSubmit.isDisplayed()) {
             this.btnSubmit.waitForDisplayed();
         }

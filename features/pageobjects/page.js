@@ -8,6 +8,6 @@ module.exports = class Page {
     * @param path path of the sub page (e.g. /path/to/page.html)
     */
     open() {
-        return browser.url(`https://qa-login.greatplacetowork.com/identity/Account/PasswordSetup?userId=7aedf67a-f092-41b7-969b-ba2e55901a23&code=CfDJ8FieISvxm%2b5Brn%2f2YhAG2jBWgIa4IhTVNPSdUS3T9OGin1pQWNzFEQjesAgQ5fqURpaBN%2bMLXdYo3VElqZX%2bVaJlolwPtKrRPXTX5gwsyVijnxZpNIv1Ta0IIpVtfxEO172BjROzBJmQEAyi5mwlQn4ueDXUG1%2flR1Ky5ZLtWvXU1FkC5Uc%2fVpBrndJ6enG6IWxtJGTF4wq46e0vNaWURLU78H%2f2qlt2Fc9%2fMOp7a2AU&culture=en-US`)
+        return browser.url(`https://dev-login.greatplacetowork.com/identity/Account/PasswordSetup?userId=028c1f89-9a14-4a07-b1a7-99188c361915&code=CfDJ8OIqJbWxBhFHnng258tZB4LVOnQEdu%2f%2b7wJ2Q4IL3Q0mjlgzcFpuRiCcidrEAVz7zrcZsvDAD5cAH52CWUbyAGFo1pw0UC4TqzofKh7deBtEHN7aErMgEBDkZZeXYZriTuFGAyBkqT4C1658PCcFYlgPsa6wQmNPbAN0P5ZddoSzLb6BzsxyMWYXbZBRZZohFfKlX5DdzmwJZCQF2RQfkUqckX0%2fo%2bYkBNlZcihz3Z0Z&culture=en-US`)
     }
 }
