@@ -2,7 +2,7 @@ Feature: Create password page
 
   Feature description:
 
-  Setting password for hr admins and managres
+  Setting password for hr admins and managers
 
   Scenario Outline: Setting password, unhappy path
     Given I am on the emprising create password page
