@@ -1,0 +1,3 @@
+{
+  "url": "https://uat-login.greatplacetowork.com/identity/Account/Login?ReturnUrl=%2Fidentity%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DGptwCMP%26redirect_uri%3Dhttps%253A%252F%252Fuat-app.emprising.com%252Flogin.html%26response_type%3Did_token%2520token%26scope%3Dopenid%2520GptwClientLoginScope%2520all_claims%2520profile%2520email%26state%3Ddd37eb8f34ff4bf8ad865a926e20dade%26nonce%3D362328032ede42c4931b32126068c4f2"
+}

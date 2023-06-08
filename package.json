@@ -1,29 +1,36 @@
 {
-  "name": "GptwProject",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/barackov1995/GptwProject.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/barackov1995/GptwProject/issues"
-  },
-  "homepage": "https://github.com/barackov1995/GptwProject#readme",
-  "devDependencies": {
-    "@wdio/cli": "^7.16.13",
-    "@wdio/cucumber-framework": "^7.16.13",
-    "@wdio/local-runner": "^7.16.13",
-    "@wdio/spec-reporter": "^7.16.13",
-    "@wdio/sync": "7.6.1",
-    "chromedriver": "^98.0.0",
-    "wdio-chromedriver-service": "^7.2.6"
-  }
+    "name": "GptwProject",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "wdio": "wdio run ./wdio.conf.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/barackov1995/GptwProject.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/barackov1995/GptwProject/issues"
+    },
+    "homepage": "https://github.com/barackov1995/GptwProject#readme",
+    "devDependencies": {
+        "@wdio/allure-reporter": "^7.25.1",
+        "@wdio/cli": "^8.7.0",
+        "@wdio/cucumber-framework": "^7.30.2",
+        "@wdio/local-runner": "^7.30.2",
+        "@wdio/selenium-standalone-service": "^7.26.0",
+        "@wdio/spec-reporter": "^7.30.2",
+        "@wdio/sync": "7.6.1",
+        "chromedriver": "^98.0.1",
+        "cucumber-tag-expressions": "^2.0.3",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.5",
+        "wdio-chromedriver-service": "^7.3.2",
+        "wdio-geckodriver-service": "^4.0.0"
+    }
 }

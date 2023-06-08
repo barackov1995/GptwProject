@@ -10,6 +10,6 @@ module.exports = class Page {
     */
    
     open() {
-        return browser.url(`https://qa-login.greatplacetowork.com/identity/Account/PasswordSetup?userId=a8a5ff9f-c62e-4621-9517-cba1424aa034&code=CfDJ8FieISvxm%2b5Brn%2f2YhAG2jDDU%2fYX%2fbQmGKP76fc%2febVOoVBfDzS1IK%2feJXHEoOQwZf%2b9FctLSYl6XN7ORV0%2fYL0PWJDuHKPwwQ8BzfeshnH1UXTGvQ7z4uXcO5R0cRUvZfvqxGZz3QIkJaPu2k3%2fadXALv05qA599o1k6LRTvwpKk5O9mNL37bDpbp9jzTmjVMKcNpQs3gqqHLlIFVOMSI2aR9ibWfWsEXaXDYZ4F%2bdI&culture=en-US`)
+        return browser.url(`https://uat-login.greatplacetowork.com/identity/Account/Login?ReturnUrl=%2Fidentity%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DGptwCMP%26redirect_uri%3Dhttps%253A%252F%252Fuat-app.emprising.com%252Flogin.html%26response_type%3Did_token%2520token%26scope%3Dopenid%2520GptwClientLoginScope%2520all_claims%2520profile%2520email%26state%3Ddd37eb8f34ff4bf8ad865a926e20dade%26nonce%3D362328032ede42c4931b32126068c4f2`)
     }
 }

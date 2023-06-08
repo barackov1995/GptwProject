@@ -1,45 +1,25 @@
-
-
 const Page = require('./page');
 
-/**
- * sub page containing specific selectors and methods for a specific page
- */
-class createPasswordPage extends Page {
+class loginPage extends Page {
     /**
-     * define selectors using getter methods
-     */
-    get password() { return $('#Password') }
-    get reEnterPassword() { return $('#ConfirmPassword') }
-    get btnSubmit() { return $('button=Create password') }
-    get errorPass() { return $('#Password-error') }
-    get errorPassConfirmation() { return $('#ConfirmPassword-error') }
+    * define elements
+    */
 
-    /**
-     * a method to encapsule automation code to interact with the page
-     * e.g. to create password using password 1 and password2
-     */
-    passwordField(pass1) {
-        this.password.setValue(pass1);
-    };
+    get usernameInput() { return $('//*[@name="Email"]'); }
 
-    reEnterPasswordField(pass2) {
-        this.reEnterPassword.setValue(pass2);
-    };
+    get passwordInput() { return $('//*[@name="Password"]'); }
 
-    submitButton() {
-        if (!this.btnSubmit.isDisplayed()) {
-            this.btnSubmit.waitForDisplayed();
+    get loginButton() { return $('//*[@type="submit"]'); }
+
+
+    loginAsClient(username, password) {
+        if (!this.usernameInput.isDisplayed()) {
+            this.usernameInput.waitForClickable();
         }
-        this.btnSubmit.click();
-    };
-
-    /**
-     * overwrite specific options to adapt it to page object
-     */
-    open() {
-        return super.open('login');
+        this.usernameInput.setValue(username);
+        this.passwordInput.setValue(password);
+        this.loginButton.click();
     }
 }
 
-module.exports = new createPasswordPage();
+module.exports = new loginPage();

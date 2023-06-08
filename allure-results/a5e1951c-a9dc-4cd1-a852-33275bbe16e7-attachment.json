@@ -1,0 +1,9 @@
+{
+  "script": "arguments[0].style.visibility = 'visible'; arguments[0].style.height = '100px'; arguments[0].style.width = '100px'; arguments[0].style.opacity = 1",
+  "args": [
+    {
+      "element-6066-11e4-a52e-4f735466cecf": "5b515ada-e7c9-4dd8-a3a2-fd0701a5df1f",
+      "ELEMENT": "5b515ada-e7c9-4dd8-a3a2-fd0701a5df1f"
+    }
+  ]
+}

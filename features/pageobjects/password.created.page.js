@@ -1,4 +1,4 @@
-const Page = require('./page');
+import Page from './page';
 
 class passwordCreatedPage extends Page {
 
@@ -13,4 +13,4 @@ class passwordCreatedPage extends Page {
 };
 
 
-module.exports = new passwordCreatedPage();
+export default new passwordCreatedPage();
